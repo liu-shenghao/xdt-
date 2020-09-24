@@ -1,0 +1,4 @@
+.introduce{width: 1200px;margin: 20px auto;}
+.line{display: flex;}
+.line p:nth-of-type(1){width: 10%;background: brown;height: 2px;}
+.line p:nth-of-type(2){width: 90%;background: #ccc;height: 1px;}

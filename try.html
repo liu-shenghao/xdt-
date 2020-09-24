@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.red{background: red;}
+			.yellow{background: yellow;}
+			.a{background: black;}
+			.b{background: #02BBD2;}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			{{1+2}}
+			<div v-html="ll"></div>
+			<div v-show="active">1</div>
+			<div @click="handle()">点我</div>
+			<div :class="isActive?'red':'yellow'">2</div>
+			<div :class="classObj">对象颜色</div>
+			<div :class="classArr">数组颜色</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script type="text/javascript">
+			var box=new Vue({
+				el:"#box",
+				data:{
+					ll:'<h1>大家好</h1>',
+					active:'true',
+					isActive:true,
+					classObj:{
+						a:true,
+						b:false
+					},
+					classArr:["a","b"]
+				},
+				methods:{
+					handle(){
+						this.isActive=!this.isActive
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

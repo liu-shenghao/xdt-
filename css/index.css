@@ -1,0 +1,480 @@
+body{min-width: 1400px;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+nav{display: flex;align-items: center;justify-content: space-around;height: 120px;}
+.mess ul{overflow: hidden;}
+.mess ul li{float: left;width: 124px;height: 79px;font-size: 18px;margin-right: 14px;text-align: center;}
+.mess ul li a{color: black;line-height: 79px;}
+/* .mess li:hover{background-color: #008000;}
+.mess a:hover{color: white;} */
+.about{width: 1200px;height: 410px;margin: 106px auto 140px;}
+.about .left{width: 600px;float: left;}
+.about .right{width: 600px;float: left;}
+.about .right p{text-align: center;margin: 0;}
+.about .right P:nth-of-type(1){width: 150px;margin: 0 auto;border-bottom: 1px solid #000000;font-size: 25px;font-weight: 800;}
+.about .right P:nth-of-type(2){margin-top: 5px;}
+.about .right span{text-indent: 2em;display: block;margin-left: 15px;margin-top: 10px;font-family: "small fonts";}
+.title{margin-bottom: 50px;margin-top: 50px;}
+.title p{text-align: center;margin: 0;font-size: 30px;font-weight: bold;}
+.title p:nth-of-type(2){font-size: 15px;color: #666666;margin-top: 20px;}
+/* 我的服务项目 */
+.services{width: 1200px;margin: 10px auto;}
+.scopeZu{display: flex;justify-content: center;margin-top: 20px;}
+.scopeZu .lei{width: 100px;height: 40px;line-height: 40px;text-align: center;background: #006428;color: white;margin-right: 30px;font-size: 13px;}
+.scopeBox{margin: 20px 0px;overflow: hidden;}
+.n_children{width: 370px;float: left;margin: 5px 10px 20px 5px;}
+.n_img{width: 370px;height: 220px;}
+.n_img img{width: 100%;height: 100%;}
+.n_bottom{text-align: center;}
+/* 服务流程 */
+.process{width: 1200px;margin: 15px auto;}
+.processBox{display: flex;justify-content: space-around;margin-bottom: 50px;}
+.processBox .one{display: flex;flex-direction: column;}
+.processBox .one div:nth-of-type(1){text-align: center;}
+/*发展史 */
+.messBg{
+	width: 15px;
+	height: 15px;
+	background: #E65825;
+	display: inline-block;
+	border-radius: 50%;
+}
+/* 底部 */
+.footer{
+    background: #212121;
+    padding: 4em 0;
+}
+.footer h4{
+	display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+}
+.footer input[type="email"]{
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em;
+    width: 82%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.footer input[type="submit"]{
+	outline: none;
+    color: #212121;
+    padding: 1em 3em;
+    font-size: 1em;
+    background: #1cf1f1;
+    border: none;
+    text-transform: uppercase;
+    margin-left: 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.footer input[type="submit"]:hover{
+	background: #ffffff;
+    color: #212121;
+}
+.agile_footer_copy{
+	padding:3em 0;
+	border-bottom:1px solid #EAEAEA;
+}
+.w3agile_footer_grid h3{
+    font-size: 1.2em;
+    color: #1cf1f1;
+    margin: 0 0 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.w3agile_footer_grid p{
+	font-size:14px;
+	color:#bfbfbf;
+	line-height:2em;
+	margin:0;
+}
+.w3agile_footer_grid p span{
+	display:block;
+	margin:1em 0 0;
+}
+.w3agile_footer_grid ul li{
+	list-style-type:none;
+	color:#bfbfbf;
+	font-size:14px;
+}
+.w3agile_footer_grid1 ul{
+	margin:0;
+	padding:0;
+}
+.w3agile_footer_grid1 ul li{
+	margin-bottom:1em;
+}
+.w3agile_footer_grid ul li span{
+	display:block;
+	margin-left: 3em;
+}
+.w3agile_footer_grid ul li a{
+	color:#bfbfbf;
+	text-decoration:none;
+}
+.w3agile_footer_grid ul li a:hover{
+	color:#1cf1f1;
+}
+.w3agile_footer_grid ul{
+	padding:0;
+	margin:0;
+}
+.w3agile_footer_grid ul li{
+    margin-bottom: 1em;
+}
+.agileits_w3layouts_copy_right p{
+	color:#bfbfbf;
+	line-height:2em;
+	margin:0;
+}
+.agileits_w3layouts_copy_right p a{
+    text-decoration: none;
+    color: #1cf1f1;
+}
+.agileits_w3layouts_copy_right p a:hover{
+	color:#FFFFFF;
+}
+.w3agile_footer_grid1 ul li span {
+    display: inline-block;
+    margin-left: 0;
+    padding-right: 1em;
+}
+.w3_agileits_copy_right_social{
+    padding: 2em 0 0;
+}
+.agileits_w3layouts_copy_right{
+	text-align:center;
+}
+/*-- //footer --*/
+/*-- to-top --*/
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 2%;
+	overflow: hidden;
+	z-index: 999; 
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-indent: 100%;
+	background: url(../images/arrow.png) no-repeat 0px 0px;
+}
+#toTopHover {
+	width: 40px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
+/*-- //to-top --*/
+/*-- responsive --*/
+@media(max-width:1080px){
+	.icon-left {
+		margin-right: .5em;
+	}
+	.banner-info {
+		padding: 7em 0 2em 0;
+	}
+	.header-top {
+		margin: 7em 0 0 0;
+	}
+	.captn-icon {	
+		width: 30%;
+		top: 8%;
+	}
+	.news-right {
+		padding-left: 0em;
+	}
+}
+@media(max-width:991px){
+	.wthree-services-info {
+		padding: 4em 0;
+	}
+	.wthree-services-captn {
+		padding: 2em 1em;
+	}
+	.wthree-services-captn h4 {
+		letter-spacing: 0px;
+	}
+	.w3ls-hover .view-caption {
+		padding: 6em 0;
+	}
+	.w3ls-about-left {
+		margin: 2em 0 0 0;
+	}
+	.w3_counter_grid {
+		float: left;
+		width: 50%;
+	}
+	.w3_counter_grid:nth-child(3),.w3_counter_grid:nth-child(4){
+		margin:2em 0 0 0;
+	}
+	.team-wthree-grid:nth-child(3),.team-wthree-grid:nth-child(4){
+		margin:2em 0 0 0;
+	}
+	.footer input[type="email"] {
+		width: 77%;
+	}
+	.w3agile_footer_grid:nth-child(2){
+		margin:2em 0;
+	}
+	.agileits-contact-left input[type="text"], .agileits-contact-left input[type="email"] {
+		margin: 1em 0 0 0;
+	}
+	.agileits-contact-left input[type="submit"] {
+		margin: 1em 0 0 0;
+	}
+}
+@media(max-width:800px){
+	.agileits-logo h1 a {
+		font-size: 3em;
+	}
+	.w3ls-button a {
+		padding: 1em 3em;
+	}
+	.w3_counter_grid p {
+		font-size: 2em;
+	}
+}
+@media(max-width:736px){
+	.navbar-toggle {
+		float: none;
+		margin-top: 8px;
+		margin-right: 0;
+	}
+	.navbar-header {
+		text-align: center;
+	}
+	.header-top-info ul li {
+		display: block;
+	}
+	.navbar-nav > li > a {
+		margin: 1em 0em;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: none;
+		position: absolute;
+		left: -80px;
+		width: 200px;
+		background: #C0C0C0;
+		z-index: 9999;
+	}
+	.wthree-services {
+		float: left;
+		width: 50%;
+	}
+	.wthree-services-captn {
+		padding: 4em 1em;
+	}
+	.wthree-services:nth-child(3),.wthree-services:nth-child(4){
+		margin:2em 0 0 0;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: #333333;
+		background: #02BBD2;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color: #1cf1f1;
+	}
+}
+@media(max-width:667px){
+	.banner-info {
+		padding: 4em 0 1em 0;
+	}
+	.header-top-info {
+		padding: 1em 0 0 0;
+	}
+	.header-top {
+		margin: 5em 0 0 0;
+	}
+	.agileits-logo h1 a {
+		font-size: 2em;
+	}
+	.w3ls-button a {
+		padding: .5em 2em;
+	}
+	.footer input[type="email"] {
+		width: 72%;
+	}
+}
+@media(max-width:600px){
+	.footer input[type="email"] {
+		width: 65%;
+	}
+}
+@media(max-width:480px){
+	.agileits-heading h3 {
+		font-size: 2.5em;
+	}
+	.w3ls-about-right-img {
+		min-height: 275px;
+	}
+	.w3ls-hover .view-caption h5 {
+		font-size: 1em;
+	}
+	.w3ls-hover .view-caption {
+		padding: 5em 0;
+	}
+	.captn-icon {
+		top: 3%;
+	}
+	.footer input[type="email"] {
+		width: 60%;
+	}
+	.wthree-services-captn {
+		padding: 3em 1em;
+	}
+	.wthree-services-grids, .gallery-w3lsrow, .news-agileinfo, .teamw3-agileinfo, .contact-w3ls-row {
+		margin: 2em 0 0 0;
+	}
+}
+@media(max-width:414px){
+	.agileits-logo h1 a {
+		font-size: 1.5em;
+	}
+	.w3ls-button {
+		margin: 2em 0 0 0;
+	}
+	.header-top {
+		margin: 3em 0 0 0;
+	}
+	.about, .services, .gallery, .stats, .news, .team, .contact {
+		padding: 2em 0;
+	}
+	.w3l-about-grids {
+		margin: 2em 0 0 0;
+	}
+	.w3ls-about-right-img {
+		min-height: 220px;
+	}
+	.icon-right {
+		float: none;
+		width: 100%;
+	}
+	.icon-left {
+		float: none;
+	}
+	.gallery-grids {
+		width: 50%;
+	}
+	.w3_counter_grid {
+		float: none;
+		width: 100%;
+	}
+	.w3_counter_grid:nth-child(2),.w3_counter_grid:nth-child(3), .w3_counter_grid:nth-child(4) {
+		margin: 2em 0 0 0;
+	}
+	.team-wthree-grid {
+		width: 100%;
+	}
+	.team-wthree-grid:nth-child(2),.team-wthree-grid:nth-child(3), .team-wthree-grid:nth-child(4) {
+		margin: 2em 0 0 0;
+	}
+	.footer input[type="email"] {
+		width: 100%;
+	}
+	.footer input[type="submit"] {
+		padding: .5em 2em;
+		margin: 1em 0 0 0;
+	}
+	.agileits-heading h3 {
+		font-size: 2em;
+	}
+	.footer {
+		padding: 2em 0;
+	}
+}
+@media(max-width:384px){
+	.wthree-services {
+		float: none;
+		width: 100%;
+	}
+	.wthree-services:nth-child(2),.wthree-services:nth-child(3), .wthree-services:nth-child(4) {
+		margin: 2em 0 0 0;
+	}
+	.wthree-services-captn {
+		padding: 4em 1em;
+	}
+}
+@media(max-width:375px){
+	.datew3-agileits {
+		width: 46%;
+		margin: 0 auto;
+		float: none;
+	}
+	.datew3-agileits-info {
+		padding: 0;
+		text-align: center;
+		float: none;
+		width: 100%;
+		margin: 1em 0 0 0;
+	}
+	.datew3-agileits.datew3-agileits-fltrt {
+		float: none;
+	}
+}
+@media(max-width:320px){
+	.agileits-logo h1 a {
+		font-size: 1em;
+	}
+	.banner-info {
+		padding: 2em 0 1em 0;
+	}
+	.w3ls-about-right-img {
+		min-height: 175px;
+	}
+	.news-right h4 {
+		font-size: 1.2em;
+	}
+	.achievesw3-agile {
+		padding: .5em;
+	}
+	.news-right {
+		padding: 0em;
+	}
+	.agileits-heading h3 {
+		font-size: 1.5em;
+	}
+	.agileits-contact-left input[type="text"], .agileits-contact-left input[type="email"] {
+		font-size: .9em;
+		padding: .5em;
+	}
+	.agileits-contact-right textarea {
+		font-size: .9em;
+		padding: .5em;
+		min-height: 7.5em;
+	}
+	.agile_footer_copy {
+		padding: 2em 0;
+	}
+}
+
+/* 详情页 */
+.detail{
+	width: 1200px;
+	margin: 10px auto;
+}
+.detail_ms{
+	height: 42px;
+	border-left: 17px solid #006428;
+	margin-bottom: 12px;
+}
